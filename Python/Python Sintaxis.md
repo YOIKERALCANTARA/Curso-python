@@ -992,7 +992,7 @@ name.print_name("Jorge")
 
 
 
-#### Cómo importar módulos en Python
+#### **Cómo importar módulos en Python**
 
 Como has visto al final del apartado anterior, para usar las definiciones de un módulo en el intérprete o en otro módulo, primero hay que importarlo. Para ello, se usa la palabra reservada `import`. Una vez que un módulo ha sido importado, se puede acceder a sus definiciones a través del operador punto `.`.
 
@@ -1001,7 +1001,7 @@ import Nombre_Modulo
 Nombre_modulo.nombre_definicion(parametro)
 ````
 
-##### from … import …
+##### **from … import …**
 
 Podemos importar uno o varios nombres de un módulo del siguiente modo:
 
@@ -1013,7 +1013,7 @@ saludo('j2logo')
 
 Esto nos permite acceder directamente a los nombres definidos en el módulo sin tener que utilizar el operador `.`.
 
-##### from … import 
+##### **from … import**
 
 ```python
 from mis_funciones import *
@@ -1034,7 +1034,7 @@ hola('j2logo')
 >>>Hola j2logo
 ```
 
-##### Ejecutar módulos como scripts
+##### **Ejecutar módulos como scripts**
 
 Un módulo puede ser ejecutado como un script o como punto de entrada de un programa cuando se pasa directamente como parámetro al intérprete de Python:
 
@@ -1062,5 +1062,10 @@ Se debe ejecutar en consola en comando `pip` junto a la descripcion correspondie
 ````python
 # CMD
 pip install colorama
+
+# Python
+from colorama import Fore, Style, init
+init(convert=True)
+print(Fore.RED + "Hello World")
 ````
 
